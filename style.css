@@ -14,7 +14,8 @@ h1 {
 
 p{
     color:white;
-    background:green;
+    font-size: 24px;
+    /*background:green;*/
 }
 
 .header {
@@ -80,4 +81,39 @@ a:link {
     color: #DDD;
     text-decoration: none;
     background-color: #999;
+  }
+
+  .game-title {
+    color: white;
+    font-size:70px;
+  }
+
+  .main-content {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 120px;
+  }
+
+  .section {
+    max-width: 800px;
+    align-self: center;
+    width: 100%;
+    /*width: 600px;*/
+    
+    /*display: flex;*/
+    /*justify-content: center;*/
+    align-items: center;
+    text-align: center;
+    /*flex-direction: column;*/
+    /*border-top:100px;
+    border-bottom:100px;*/
+  }
+  .content-block {
+    /*width: 600px;
+    text-align: center
+*/
   }
