@@ -86,6 +86,14 @@ a:link {
   .game-title {
     color: white;
     font-size:70px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+  }
+
+  .game-box {
+    background-color: grey;
+    border: 10px;
   }
 
   .main-content {
