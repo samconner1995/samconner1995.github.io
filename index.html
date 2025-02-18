@@ -2,75 +2,85 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Sam Conner Portfolio</title>
+        <title>Sam Conner Portfolio</title>
         <link rel="stylesheet" href="./style.css">
         <script src="script.js" defer></script>
     </head>
 <body>
     <div class="header">
-        <h1>Sam Conner</h1>
-    </div>
-
-    <div class="horizontal-menu">
         <div class="flex">
-            <a href="https://www.samconner1995.github.io/games" class="horizontal-menu-item">Games</a>
-            <a href="https://www.linkedin.com/in/sam-conner-7288a32bb/" class="horizontal-menu-item">Linkedin</a>
-            <a href="https://github.com/samconner1995" class="horizontal-menu-item">Github</a>
+            <h1 class="name">Sam Conner</h1>
+            <div class="links">
+
+                <a href="https://www.linkedin.com/in/sam-conner-7288a32bb/" class="horizontal-menu-item">Linkedin</a>
+                <br>
+                <a href="https://github.com/samconner1995" class="horizontal-menu-item">Github</a>
+                <br>
+                <a href="https://linktr.ee/sam_makes_games" class="horizontal-menu-item">Socials</a>
+                
+            </div>
         </div>
     </div>
+
+
+    <div class="horizontal-menu">
+    </div>
     <div class="main-content">
-        <div class="section">
+        <div class="section-top">
             <div class="game-box">
                 <div class="game-title">
-                    <img src="https://cdn.impress.games/presskits/625b0ebe56636217377c1b05128438b8/logos/3.png?t=1723827482" alt="Mech Tech Logo" width="480" height="165">
+                    <img src="https://cdn.impress.games/presskits/625b0ebe56636217377c1b05128438b8/logos/3.png?t=1723827482" alt="Mech Tech Logo" width="360" height="124">
                 </div>
-                <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2302340/header.jpg?t=1738188154" alt="Mech Tech Cover Art" width="780" height="365">
-                <p class="content-block"> A fast-paced hybrid of card battler and action game for up to 8 players! Fight as a mech, then hop into your base to deploy your troops to the battlefield! Fend off the Blue Invasion in Co-op Mode, or fight your friends in Battle Mode!</p>
+                <img src="Main_Capsule.png" alt="Mech Tech Cover Art" width="600" height="344">
+                <div class="flex">
+                    <div class="language">Engine: GameMaker</div>
+                    <div class="language">  Language: GML  </div>
+                </div>
+                <p class="content-block"> A fast-paced hybrid of card battler and action game for up to 8 players!</p>
             </div>
         </div>
         <div class="section">
-            <h2>My Role</h2>
-            <ul> 
-                <li>Programmer</li>
-                <li>Game Designer</li>
-            </ul>
-            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2302340/extras/BallGif30.gif?t=1738188154" alt="Mech Tech Gif" width="600" height="338">
+            <h2 class="my-roles">My Role</h2>
+            <h3 class="role">Programmer + Game Designer</h3>
+
         </div>
         <div class="section">
-            <h2>AI Behavior</h2>
+            <h2 class="role">AI Behavior</h2>
             <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2302340/extras/MissileGif30.gif?t=1738188154" alt="Mech Tech Gif" width="600" height="338">
             <p class="content-block">Through use of steering vectors and finite state machines, dynamic behavior is achieved! Computer players look at their internal state and the environment around them, and calculate their desired movement vectors and actions in real time.</p>
         </div>
         <div class="section">
-            <h2>Procedural Generation</h2>
+            <h2 class="role">Online Play</h2>
+            <img src="client-server.png" alt="Mech Tech Gif" width="500" height="282">
+            <p class="content-block"> Online play is achieved through the Steamworks API. The game state is synced using an authoritative server that validates requests from clients before sending approval.</p>
+        </div>
+        <div class="section">
+            <h2 class="role">Procedural Generation</h2>
             <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2302340/extras/RogueLite270p.gif?t=1738188154" alt="Mech Tech Gif" width="600" height="338">
-            <p class="content-block">Using primarily weighted randomness, a diverse set of enemy armies, characters, equipment and upgrade choices are generated at the start of each run. The players navigate through these choices in between battles. Each playthrough is different!</p>
+            <p class="content-block">Using weighted randomness, a diverse set of enemies, and upgrade choices are generated. Players navigate through these choices in between battles. Each playthrough is different!</p>
         </div>
         <div class="section">
-            <h2>Data collection</h2>
-            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2302340/extras/MissileGif30.gif?t=1738188154" alt="Mech Tech Gif" width="600" height="338">
-            <p class="content-block"> Data is collected in the background in real time during battles, players' damage dealt, damage received, and their efficiency as a commander are among the data collected. This is then processed and shown to the players after each battle. Players love validating their strategies through data! </p>
+            <h2 class="role">Data collection</h2>
+            
+            <img src="data_gif .gif" alt="Mech Tech Gif" width="600" height="338">
+            <p class="content-block"> Data is collected in the background in real time during battles. This is then processed and shown to the players after each battle. Players love validating their strategies through data! </p>
         </div>
         <div class="section">
-            <h2>Animation System</h2>
-            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2302340/extras/MissileGif30.gif?t=1738188154" alt="Mech Tech Gif" width="600" height="338">
+            <h2 class="role">Animation System</h2>
+            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2302340/extras/BallGif30.gif?t=1738188154" alt="Mech Tech Gif" width="600" height="338">
             <p class="content-block"> Each player's body is broken up into 6 pieces. These pieces are animated independently via custom animation code. Players' legs run, sidestep, and backpeddle. The force of firing a gun travels from the gun through the arms to the shoulders.</p>
         </div>
         <div class="section">
-            <h2>8 player input management</h2>
-            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2302340/extras/MissileGif30.gif?t=1738188154" alt="Mech Tech Gif" width="600" height="338">
-            <p class="content-block"> Up to 8 players can play locally. Keyboard and gamepads are supported. Using the OpenXInput API, 8 XINPUT devices can be used simultaneously, bypassing API's limit of 4.</p>
+            <h2 class="role">8 player input management</h2>
+            <img src="results_gif .gif" alt="Mech Tech Gif" width="600" height="338">
+            <p class="content-block"> Up to 8 players can play locally. Keyboard and gamepads are supported. Using the OpenXInput API, 8 XINPUT devices can be used simultaneously, bypassing the API's limit of 4!</p>
         </div>
         <div class="section">
-            <h2>3d Card effects (UI)</h2>
-            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2302340/extras/MissileGif30.gif?t=1738188154" alt="Mech Tech Gif" width="600" height="338">
+            <h2 class="role">3d Card effects (UI)</h2>
+            <img src="3d_cards.gif" alt="Mech Tech Gif" width="600" height="338">
             <p class="content-block"> Using surfaces, shaders, and some math, a 3d effect is created for the playing cards. Small UI touches like this go a long way!</p>
         </div>
-        <div class="section">
-            <h2>Online Play</h2>
-            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2302340/extras/MissileGif30.gif?t=1738188154" alt="Mech Tech Gif" width="600" height="338">
-            <p class="content-block"> Online play is achieved through the Steamworks API. The game state is synced using an authoritative server that validates requests from clients before sending approval.</p>
-        </div>
+
     </div>
 
 
